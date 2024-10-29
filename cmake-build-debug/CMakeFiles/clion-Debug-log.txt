@@ -1,0 +1,58 @@
+C:\Users\Hunter\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/Hunter/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S "C:\Users\Hunter\OneDrive - Queensland University of Technology\Documents\Active Units\CAB401—High-Performance & Parallel Computiŋ\Assessments\Task2—Parallelization Project\CAB401_A2_Project" -B "C:\Users\Hunter\OneDrive - Queensland University of Technology\Documents\Active Units\CAB401—High-Performance & Parallel Computiŋ\Assessments\Task2—Parallelization Project\CAB401_A2_Project\cmake-build-debug"
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+CMake Warning in C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-beuadu/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-beuadu/CMakeFiles/cmTC_825e3.dir/./
+
+  has 283 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    CMakeCCompilerABI.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/Hunter/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+CMake Warning in C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0yqeod/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0yqeod/CMakeFiles/cmTC_ef605.dir/./
+
+  has 283 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    CMakeCXXCompilerABI.cpp.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/Hunter/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (6.9s)
+CMake Warning in CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/CMakeFiles/CAB401_A2_Project.dir/./
+
+  has 248 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    main.cpp.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug
