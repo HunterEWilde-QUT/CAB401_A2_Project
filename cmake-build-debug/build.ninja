@@ -59,11 +59,6 @@ build CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj: CXX_COMPILER__CA
   OBJECT_DIR = CMakeFiles\CAB401_A2_Project.dir
   OBJECT_FILE_DIR = CMakeFiles\CAB401_A2_Project.dir\cvtree
 
-build CMakeFiles/CAB401_A2_Project.dir/cvtree/tidy.cpp.obj: CXX_COMPILER__CAB401_A2_Project_unscanned_Debug C$:/Users/Hunter/OneDrive$ -$ Queensland$ University$ of$ Technology/Documents/Active$ Units/CAB401—High-Performance$ &$ Parallel$ Computiŋ/Assessments/Task2—Parallelization$ Project/CAB401_A2_Project/cvtree/tidy.cpp || cmake_object_order_depends_target_CAB401_A2_Project
-  DEP_FILE = CMakeFiles\CAB401_A2_Project.dir\cvtree\tidy.cpp.obj.d
-  OBJECT_DIR = CMakeFiles\CAB401_A2_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\CAB401_A2_Project.dir\cvtree
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CAB401_A2_Project
@@ -72,7 +67,7 @@ build CMakeFiles/CAB401_A2_Project.dir/cvtree/tidy.cpp.obj: CXX_COMPILER__CAB401
 #############################################
 # Link the executable CAB401_A2_Project.exe
 
-build CAB401_A2_Project.exe: CXX_EXECUTABLE_LINKER__CAB401_A2_Project_Debug CMakeFiles/CAB401_A2_Project.dir/main.cpp.obj CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj CMakeFiles/CAB401_A2_Project.dir/cvtree/tidy.cpp.obj
+build CAB401_A2_Project.exe: CXX_EXECUTABLE_LINKER__CAB401_A2_Project_Debug CMakeFiles/CAB401_A2_Project.dir/main.cpp.obj CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CAB401_A2_Project.dir
   POST_BUILD = cd .
