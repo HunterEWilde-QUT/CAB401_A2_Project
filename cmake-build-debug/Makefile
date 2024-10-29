@@ -152,29 +152,29 @@ cvtree/improved.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.s
 .PHONY : cvtree/improved.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+cvtree/main.obj: cvtree/main.cpp.obj
+.PHONY : cvtree/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+cvtree/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj
+.PHONY : cvtree/main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+cvtree/main.i: cvtree/main.cpp.i
+.PHONY : cvtree/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/main.cpp.i
-.PHONY : main.cpp.i
+cvtree/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.i
+.PHONY : cvtree/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+cvtree/main.s: cvtree/main.cpp.s
+.PHONY : cvtree/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/main.cpp.s
-.PHONY : main.cpp.s
+cvtree/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.s
+.PHONY : cvtree/main.cpp.s
 
 # Help Target
 help:
@@ -188,9 +188,9 @@ help:
 	@echo ... cvtree/improved.obj
 	@echo ... cvtree/improved.i
 	@echo ... cvtree/improved.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... cvtree/main.obj
+	@echo ... cvtree/main.i
+	@echo ... cvtree/main.s
 .PHONY : help
 
 

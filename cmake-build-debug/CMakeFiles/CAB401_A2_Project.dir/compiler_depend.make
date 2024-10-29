@@ -83,7 +83,7 @@ CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj: C:/Users/Hunter/Docume
   C:/Users/Hunter/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/cvtree.h
 
-CMakeFiles/CAB401_A2_Project.dir/main.cpp.obj: C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/main.cpp \
+CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj: C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/main.cpp \
   C:/Users/Hunter/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/Users/Hunter/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
   C:/Users/Hunter/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
@@ -433,7 +433,7 @@ C:/Users/Hunter/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/includ
 
 C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/cvtree.h:
 
-C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/main.cpp:
+C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/main.cpp:
 
 C:/Users/Hunter/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h:
 

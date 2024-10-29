@@ -3,6 +3,6 @@ project(CAB401_A2_Project)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CAB401_A2_Project main.cpp
+add_executable(CAB401_A2_Project cvtree/main.cpp
         cvtree/improved.cpp
         cvtree/cvtree.h)

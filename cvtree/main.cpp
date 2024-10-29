@@ -1,5 +1,5 @@
 #include <iostream>
-#include "cvtree/cvtree.h"
+#include "cvtree.h"
 
 int main(int argc,char * argv[])
 {

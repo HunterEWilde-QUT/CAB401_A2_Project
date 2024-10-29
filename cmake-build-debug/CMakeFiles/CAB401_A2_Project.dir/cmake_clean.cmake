@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "CAB401_A2_Project.pdb"
   "CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj"
   "CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj.d"
-  "CMakeFiles/CAB401_A2_Project.dir/main.cpp.obj"
-  "CMakeFiles/CAB401_A2_Project.dir/main.cpp.obj.d"
+  "CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj"
+  "CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj.d"
   "libCAB401_A2_Project.dll.a"
 )
 
