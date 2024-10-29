@@ -1,3 +1,3 @@
-C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/CMakeFiles/CAB401_A2_Project.dir
-C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cmake-build-debug/CMakeFiles/CAB401_A2_Project.dir
+C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

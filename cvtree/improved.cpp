@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 #include <math.h>
-#include "../cvtree.h"
+#include "cvtree.h"
 
 void Init() {
     M2 = 1;

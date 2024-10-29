@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project
+# Install script for directory: C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Hunter/OneDrive - Queensland University of Technology/Documents/Active Units/CAB401—High-Performance & Parallel Computiŋ/Assessments/Task2—Parallelization Project/CAB401_A2_Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
