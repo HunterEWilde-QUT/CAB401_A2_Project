@@ -5,6 +5,11 @@
 #include <math.h>
 #include "cvtree.h"
 
+int number_bacteria;
+char** bacteria_name;
+long M, M1, M2;
+short code[27] = { 0, 2, 1, 2, 3, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, 16, 1, 17, 18, 5, 19, 3};
+
 void Init() {
     M2 = 1;
     for (int i = 0; i < LEN - 2; i++)    // M2 = AA_NUMBER ^ (LEN-2);

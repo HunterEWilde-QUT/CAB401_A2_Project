@@ -5,14 +5,15 @@
 #ifndef CAB401_A2_PROJECT_CVTREE_H
 #define CAB401_A2_PROJECT_CVTREE_H
 
-int number_bacteria;
-char** bacteria_name;
-long M, M1, M2;
-short code[27] = { 0, 2, 1, 2, 3, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, 16, 1, 17, 18, 5, 19, 3};
 #define encode(ch)		code[ch-'A']
 #define LEN				6
 #define AA_NUMBER		20
 #define	EPSILON			1e-010
+
+extern int number_bacteria;
+extern char** bacteria_name;
+extern long M, M1, M2;
+extern short code[27];
 
 void Init();
 
