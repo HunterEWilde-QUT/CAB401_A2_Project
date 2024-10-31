@@ -6,43 +6,85 @@
 #include <omp.h>
 #include "cvtree.h"
 
-double CompareBacteria_parallel(Bacteria *b1, Bacteria *b2) {
-    double correlation = 0;
-    double vector_len1 = 0;
-    double vector_len2 = 0;
-    long p1 = 0;
-    long p2 = 0;
-    while (p1 < b1->count && p2 < b2->count) {
-        long n1 = b1->ti[p1];
-        long n2 = b2->ti[p2];
-        if (n1 < n2) {
-            double t1 = b1->tv[p1];
-            vector_len1 += (t1 * t1);
-            p1++;
-        } else if (n2 < n1) {
-            double t2 = b2->tv[p2];
-            p2++;
-            vector_len2 += (t2 * t2);
-        } else {
-            double t1 = b1->tv[p1++];
-            double t2 = b2->tv[p2++];
-            vector_len1 += (t1 * t1);
-            vector_len2 += (t2 * t2);
-            correlation += t1 * t2;
-        }
-    }
-    while (p1 < b1->count) {
-        long n1 = b1->ti[p1];
-        double t1 = b1->tv[p1++];
-        vector_len1 += (t1 * t1);
-    }
-    while (p2 < b2->count) {
-        long n2 = b2->ti[p2];
-        double t2 = b2->tv[p2++];
-        vector_len2 += (t2 * t2);
+Bacteria_parallel::Bacteria_parallel(char *filename) : Bacteria(filename) {
+    FILE *bacteria_file;
+    errno_t OK = fopen_s(&bacteria_file, filename, "r");
+
+    if (OK != 0) {
+        fprintf(stderr, "Error: failed to open file %s\n", filename);
+        exit(1);
     }
 
-    return correlation / (sqrt(vector_len1) * sqrt(vector_len2));
+    InitVectors();
+
+    char ch;
+    while ((ch = fgetc(bacteria_file)) != EOF) {
+        if (ch == '>') {
+            while (fgetc(bacteria_file) != '\n'); // skip rest of line
+
+            char buffer[LEN - 1];
+            fread(buffer, sizeof(char), LEN - 1, bacteria_file);
+            init_buffer(buffer);
+        } else if (ch != '\n') cont_buffer(ch);
+    }
+
+    long total_plus_complement = total + complement;
+    double total_div_2 = total * 0.5;
+    int i_mod_aa_number = 0;
+    int i_div_aa_number = 0;
+    long i_mod_M1 = 0;
+    long i_div_M1 = 0;
+
+    double one_l_div_total[AA_NUMBER];
+    for (int i = 0; i < AA_NUMBER; i++) one_l_div_total[i] = (double) one_l[i] / total_l;
+
+    double *second_div_total = new double[M1];
+    for (int i = 0; i < M1; i++) second_div_total[i] = (double) second[i] / total_plus_complement;
+
+    count = 0;
+    double *t = new double[M];
+
+    for (long i = 0; i < M; i++) {
+        double p1 = second_div_total[i_div_aa_number];
+        double p2 = one_l_div_total[i_mod_aa_number];
+        double p3 = second_div_total[i_mod_M1];
+        double p4 = one_l_div_total[i_div_M1];
+        double stochastic = (p1 * p2 + p3 * p4) * total_div_2;
+
+        if (i_mod_aa_number == AA_NUMBER - 1) {
+            i_mod_aa_number = 0;
+            i_div_aa_number++;
+        } else i_mod_aa_number++;
+
+        if (i_mod_M1 == M1 - 1) {
+            i_mod_M1 = 0;
+            i_div_M1++;
+        } else i_mod_M1++;
+
+        if (stochastic > EPSILON) {
+            t[i] = (vector[i] - stochastic) / stochastic;
+            count++;
+        } else t[i] = 0;
+    }
+
+    delete second_div_total;
+    delete vector;
+    delete second;
+
+    tv = new double[count];
+    ti = new long[count];
+
+    int pos = 0;
+    for (long i = 0; i < M; i++) {
+        if (t[i] != 0) {
+            tv[pos] = t[i];
+            ti[pos] = i;
+            pos++;
+        }
+    }
+    delete t;
+
+    fclose(bacteria_file);
 }
 
 void CompareAllBacteria_parallel() {

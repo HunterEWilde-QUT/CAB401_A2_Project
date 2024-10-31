@@ -19,9 +19,12 @@ void Init();
 
 class Bacteria {
 private:
+    long index;
+
+protected:
+    long total, total_l, complement;
     long *vector, *second;
     long one_l[AA_NUMBER];
-    long index, total, total_l, complement;
 
     void InitVectors();
 
@@ -35,6 +38,11 @@ public:
     long *ti;
 
     explicit Bacteria(char *filename);
+};
+
+class Bacteria_parallel : public Bacteria {
+public:
+    explicit Bacteria_parallel(char *filename);
 };
 
 void ReadInputFile(const char *input_name);
