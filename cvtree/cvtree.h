@@ -5,13 +5,13 @@
 #ifndef CAB401_A2_PROJECT_CVTREE_H
 #define CAB401_A2_PROJECT_CVTREE_H
 
-#define encode(ch)		code[ch-'A']
-#define LEN				6
-#define AA_NUMBER		20
-#define	EPSILON			1e-010
+#define encode(ch)  code[ch-'A']
+#define LEN         6
+#define AA_NUMBER   20
+#define EPSILON     1e-010
 
 extern int number_bacteria;
-extern char** bacteria_name;
+extern char **bacteria_name;
 extern long M, M1, M2;
 extern short code[27];
 
@@ -19,13 +19,9 @@ void Init();
 
 class Bacteria {
 private:
-    long *vector;
-    long *second;
+    long *vector, *second;
     long one_l[AA_NUMBER];
-    long indexs;
-    long total;
-    long total_l;
-    long complement;
+    long index, total, total_l, complement;
 
     void InitVectors();
 

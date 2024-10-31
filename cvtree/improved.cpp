@@ -6,16 +6,15 @@
 #include "cvtree.h"
 
 int number_bacteria;
-char** bacteria_name;
+char **bacteria_name;
 long M, M1, M2;
-short code[27] = { 0, 2, 1, 2, 3, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, 16, 1, 17, 18, 5, 19, 3};
+short code[27] = {0, 2, 1, 2, 3, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, 16, 1, 17, 18, 5, 19, 3};
 
 void Init() {
     M2 = 1;
-    for (int i = 0; i < LEN - 2; i++)    // M2 = AA_NUMBER ^ (LEN-2);
-        M2 *= AA_NUMBER;
-    M1 = M2 * AA_NUMBER;        // M1 = AA_NUMBER ^ (LEN-1);
-    M = M1 * AA_NUMBER;            // M  = AA_NUMBER ^ (LEN);
+    for (int i = 0; i < LEN - 2; i++) M2 *= AA_NUMBER;  // M2 = AA_NUMBER ^ (LEN-2)
+    M1 = M2 * AA_NUMBER;                                // M1 = AA_NUMBER ^ (LEN-1)
+    M = M1 * AA_NUMBER;                                 // M  = AA_NUMBER ^ (LEN)
 }
 
 void Bacteria::InitVectors() {
@@ -31,25 +30,25 @@ void Bacteria::InitVectors() {
 
 void Bacteria::init_buffer(char *buffer) {
     complement++;
-    indexs = 0;
+    index = 0;
     for (int i = 0; i < LEN - 1; i++) {
         short enc = encode(buffer[i]);
         one_l[enc]++;
         total_l++;
-        indexs = indexs * AA_NUMBER + enc;
+        index = index * AA_NUMBER + enc;
     }
-    second[indexs]++;
+    second[index]++;
 }
 
 void Bacteria::cont_buffer(char ch) {
     short enc = encode(ch);
     one_l[enc]++;
     total_l++;
-    long index = indexs * AA_NUMBER + enc;
+    long index = index * AA_NUMBER + enc;
     vector[index]++;
     total++;
-    indexs = (indexs % M2) * AA_NUMBER + enc;
-    second[indexs]++;
+    index = (index % M2) * AA_NUMBER + enc;
+    second[index]++;
 }
 
 Bacteria::Bacteria(char *filename) {
@@ -71,8 +70,7 @@ Bacteria::Bacteria(char *filename) {
             char buffer[LEN - 1];
             fread(buffer, sizeof(char), LEN - 1, bacteria_file);
             init_buffer(buffer);
-        } else if (ch != '\n')
-            cont_buffer(ch);
+        } else if (ch != '\n') cont_buffer(ch);
     }
 
     long total_plus_complement = total + complement;
@@ -83,12 +81,10 @@ Bacteria::Bacteria(char *filename) {
     long i_div_M1 = 0;
 
     double one_l_div_total[AA_NUMBER];
-    for (int i = 0; i < AA_NUMBER; i++)
-        one_l_div_total[i] = (double) one_l[i] / total_l;
+    for (int i = 0; i < AA_NUMBER; i++) one_l_div_total[i] = (double) one_l[i] / total_l;
 
     double *second_div_total = new double[M1];
-    for (int i = 0; i < M1; i++)
-        second_div_total[i] = (double) second[i] / total_plus_complement;
+    for (int i = 0; i < M1; i++) second_div_total[i] = (double) second[i] / total_plus_complement;
 
     count = 0;
     double *t = new double[M];
@@ -103,20 +99,17 @@ Bacteria::Bacteria(char *filename) {
         if (i_mod_aa_number == AA_NUMBER - 1) {
             i_mod_aa_number = 0;
             i_div_aa_number++;
-        } else
-            i_mod_aa_number++;
+        } else i_mod_aa_number++;
 
         if (i_mod_M1 == M1 - 1) {
             i_mod_M1 = 0;
             i_div_M1++;
-        } else
-            i_mod_M1++;
+        } else i_mod_M1++;
 
         if (stochastic > EPSILON) {
             t[i] = (vector[i] - stochastic) / stochastic;
             count++;
-        } else
-            t[i] = 0;
+        } else t[i] = 0;
     }
 
     delete second_div_total;
