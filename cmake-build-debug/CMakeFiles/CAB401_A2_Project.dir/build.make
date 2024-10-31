@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Hunter\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\hunte\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Hunter\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = C:\Users\hunte\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project
+CMAKE_SOURCE_DIR = C:\Users\hunte\GitHub\CAB401_A2_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CAB401_A2_Project.dir/depend.make
@@ -69,32 +69,32 @@ include CMakeFiles/CAB401_A2_Project.dir/progress.make
 include CMakeFiles/CAB401_A2_Project.dir/flags.make
 
 CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj: CMakeFiles/CAB401_A2_Project.dir/flags.make
-CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj: C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/main.cpp
+CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj: C:/Users/hunte/GitHub/CAB401_A2_Project/cvtree/main.cpp
 CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj: CMakeFiles/CAB401_A2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj"
-	C:\Users\Hunter\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj -MF CMakeFiles\CAB401_A2_Project.dir\cvtree\main.cpp.obj.d -o CMakeFiles\CAB401_A2_Project.dir\cvtree\main.cpp.obj -c C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cvtree\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj"
+	C:\Users\hunte\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj -MF CMakeFiles\CAB401_A2_Project.dir\cvtree\main.cpp.obj.d -o CMakeFiles\CAB401_A2_Project.dir\cvtree\main.cpp.obj -c C:\Users\hunte\GitHub\CAB401_A2_Project\cvtree\main.cpp
 
 CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.i"
-	C:\Users\Hunter\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cvtree\main.cpp > CMakeFiles\CAB401_A2_Project.dir\cvtree\main.cpp.i
+	C:\Users\hunte\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\hunte\GitHub\CAB401_A2_Project\cvtree\main.cpp > CMakeFiles\CAB401_A2_Project.dir\cvtree\main.cpp.i
 
 CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.s"
-	C:\Users\Hunter\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cvtree\main.cpp -o CMakeFiles\CAB401_A2_Project.dir\cvtree\main.cpp.s
+	C:\Users\hunte\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hunte\GitHub\CAB401_A2_Project\cvtree\main.cpp -o CMakeFiles\CAB401_A2_Project.dir\cvtree\main.cpp.s
 
 CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj: CMakeFiles/CAB401_A2_Project.dir/flags.make
-CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj: C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/improved.cpp
+CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj: C:/Users/hunte/GitHub/CAB401_A2_Project/cvtree/improved.cpp
 CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj: CMakeFiles/CAB401_A2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj"
-	C:\Users\Hunter\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj -MF CMakeFiles\CAB401_A2_Project.dir\cvtree\improved.cpp.obj.d -o CMakeFiles\CAB401_A2_Project.dir\cvtree\improved.cpp.obj -c C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cvtree\improved.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj"
+	C:\Users\hunte\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj -MF CMakeFiles\CAB401_A2_Project.dir\cvtree\improved.cpp.obj.d -o CMakeFiles\CAB401_A2_Project.dir\cvtree\improved.cpp.obj -c C:\Users\hunte\GitHub\CAB401_A2_Project\cvtree\improved.cpp
 
 CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.i"
-	C:\Users\Hunter\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cvtree\improved.cpp > CMakeFiles\CAB401_A2_Project.dir\cvtree\improved.cpp.i
+	C:\Users\hunte\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\hunte\GitHub\CAB401_A2_Project\cvtree\improved.cpp > CMakeFiles\CAB401_A2_Project.dir\cvtree\improved.cpp.i
 
 CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.s"
-	C:\Users\Hunter\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cvtree\improved.cpp -o CMakeFiles\CAB401_A2_Project.dir\cvtree\improved.cpp.s
+	C:\Users\hunte\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hunte\GitHub\CAB401_A2_Project\cvtree\improved.cpp -o CMakeFiles\CAB401_A2_Project.dir\cvtree\improved.cpp.s
 
 # Object files for target CAB401_A2_Project
 CAB401_A2_Project_OBJECTS = \
@@ -110,7 +110,7 @@ CAB401_A2_Project.exe: CMakeFiles/CAB401_A2_Project.dir/build.make
 CAB401_A2_Project.exe: CMakeFiles/CAB401_A2_Project.dir/linkLibs.rsp
 CAB401_A2_Project.exe: CMakeFiles/CAB401_A2_Project.dir/objects1.rsp
 CAB401_A2_Project.exe: CMakeFiles/CAB401_A2_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CAB401_A2_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CAB401_A2_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CAB401_A2_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/CAB401_A2_Project.dir/clean:
 .PHONY : CMakeFiles/CAB401_A2_Project.dir/clean
 
 CMakeFiles/CAB401_A2_Project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles\CAB401_A2_Project.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\hunte\GitHub\CAB401_A2_Project C:\Users\hunte\GitHub\CAB401_A2_Project C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles\CAB401_A2_Project.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CAB401_A2_Project.dir/depend
 
