@@ -38,11 +38,11 @@ Bacteria_parallel::Bacteria_parallel(char *filename) : Bacteria(filename) {
     double one_l_div_total[AA_NUMBER];
     for (int i = 0; i < AA_NUMBER; i++) one_l_div_total[i] = (double) one_l[i] / total_l;
 
-    double *second_div_total = new double[M1];
+    auto *second_div_total = new double[M1];
     for (int i = 0; i < M1; i++) second_div_total[i] = (double) second[i] / total_plus_complement;
 
     count = 0;
-    double *t = new double[M];
+    auto *t = new double[M];
 
     for (long i = 0; i < M; i++) {
         double p1 = second_div_total[i_div_aa_number];
@@ -67,7 +67,7 @@ Bacteria_parallel::Bacteria_parallel(char *filename) : Bacteria(filename) {
         } else t[i] = 0;
     }
 
-    delete second_div_total;
+    delete[] second_div_total;
     delete vector;
     delete second;
 
@@ -82,18 +82,18 @@ Bacteria_parallel::Bacteria_parallel(char *filename) : Bacteria(filename) {
             pos++;
         }
     }
-    delete t;
+    delete[] t;
 
     fclose(bacteria_file);
 }
 
 void CompareAllBacteria_parallel() {
-    Bacteria **b = new Bacteria *[number_bacteria];
+    auto **b = new Bacteria_parallel *[number_bacteria];
 
 #pragma omp parallel for
     for (int i = 0; i < number_bacteria; i++) {
         printf("load %d of %d\n", i + 1, number_bacteria);
-        b[i] = new Bacteria(bacteria_name[i]);
+        b[i] = new Bacteria_parallel(bacteria_name[i]);
     }
 
 #pragma omp parallel for collapse(2)
