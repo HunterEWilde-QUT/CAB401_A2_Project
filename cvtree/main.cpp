@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
     // Switch between sequential & parallel versions
     bool s = 1; // true -> sequential, false -> parallel
     if (s) CompareAllBacteria();
-    else; //CompareAllBacteria_parallel();
+    else CompareAllBacteria_parallel();
 
     time_t t2 = time(NULL);
     printf("time elapsed: %lld seconds\n", t2 - t1);

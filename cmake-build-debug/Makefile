@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\hunte\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Hunter\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\hunte\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = C:\Users\Hunter\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\hunte\GitHub\CAB401_A2_Project
+CMAKE_SOURCE_DIR = C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	C:\Users\hunte\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\Hunter\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\Users\hunte\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\Hunter\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\hunte\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Hunter\Documents\GitHub\CAB401_A2_Project\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,30 @@ cvtree/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.s
 .PHONY : cvtree/main.cpp.s
 
+cvtree/parallel.obj: cvtree/parallel.cpp.obj
+.PHONY : cvtree/parallel.obj
+
+# target to build an object file
+cvtree/parallel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/cvtree/parallel.cpp.obj
+.PHONY : cvtree/parallel.cpp.obj
+
+cvtree/parallel.i: cvtree/parallel.cpp.i
+.PHONY : cvtree/parallel.i
+
+# target to preprocess a source file
+cvtree/parallel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/cvtree/parallel.cpp.i
+.PHONY : cvtree/parallel.cpp.i
+
+cvtree/parallel.s: cvtree/parallel.cpp.s
+.PHONY : cvtree/parallel.s
+
+# target to generate assembly for a file
+cvtree/parallel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CAB401_A2_Project.dir\build.make CMakeFiles/CAB401_A2_Project.dir/cvtree/parallel.cpp.s
+.PHONY : cvtree/parallel.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... cvtree/main.obj
 	@echo ... cvtree/main.i
 	@echo ... cvtree/main.s
+	@echo ... cvtree/parallel.obj
+	@echo ... cvtree/parallel.i
+	@echo ... cvtree/parallel.s
 .PHONY : help
 
 

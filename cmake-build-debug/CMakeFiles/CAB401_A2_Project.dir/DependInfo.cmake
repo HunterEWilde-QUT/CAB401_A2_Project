@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/hunte/GitHub/CAB401_A2_Project/cvtree/improved.cpp" "CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj" "gcc" "CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj.d"
-  "C:/Users/hunte/GitHub/CAB401_A2_Project/cvtree/main.cpp" "CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj" "gcc" "CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj.d"
+  "C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/improved.cpp" "CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj" "gcc" "CMakeFiles/CAB401_A2_Project.dir/cvtree/improved.cpp.obj.d"
+  "C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/main.cpp" "CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj" "gcc" "CMakeFiles/CAB401_A2_Project.dir/cvtree/main.cpp.obj.d"
+  "C:/Users/Hunter/Documents/GitHub/CAB401_A2_Project/cvtree/parallel.cpp" "CMakeFiles/CAB401_A2_Project.dir/cvtree/parallel.cpp.obj" "gcc" "CMakeFiles/CAB401_A2_Project.dir/cvtree/parallel.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
