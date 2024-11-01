@@ -51,4 +51,6 @@ double CompareBacteria(Bacteria *b1, Bacteria *b2);
 
 void CompareAllBacteria();
 
+void CompareAllBacteria_parallel();
+
 #endif //CAB401_A2_PROJECT_CVTREE_H
