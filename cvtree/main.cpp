@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     ReadInputFile("list.txt");
 
     // Switch between sequential & parallel versions
-    bool s = 1; // true -> sequential, false -> parallel
+    bool s = 0; // true -> sequential, false -> parallel
     if (s) CompareAllBacteria();
     else CompareAllBacteria_parallel();
 

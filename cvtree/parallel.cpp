@@ -90,17 +90,18 @@ Bacteria_parallel::Bacteria_parallel(char *filename) : Bacteria(filename) {
 void CompareAllBacteria_parallel() {
     auto **b = new Bacteria_parallel *[number_bacteria];
 
-#pragma omp parallel for
+    #pragma omp parallel for
     for (int i = 0; i < number_bacteria; i++) {
+        #pragma omp critical
         printf("load %d of %d\n", i + 1, number_bacteria);
         b[i] = new Bacteria_parallel(bacteria_name[i]);
     }
 
-#pragma omp parallel for collapse(2)
+    #pragma omp parallel for collapse(2)
     for (int i = 0; i < number_bacteria - 1; i++)
         for (int j = i + 1; j < number_bacteria; j++) {
-            printf("%2d %2d -> ", i, j);
             double correlation = CompareBacteria(b[i], b[j]);
-            printf("%.20lf\n", correlation);
+            #pragma omp critical
+            printf("%2d %2d -> %.20lf\n", i, j, correlation);
         }
 }
